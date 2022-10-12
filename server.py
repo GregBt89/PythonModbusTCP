@@ -2,7 +2,7 @@ import pandas as pd
 from pyModbusTCP.server import ModbusServer, DataBank
 from time import sleep
 
-DATA = pd.read_csv("2014JAN.csv", header=[0,1], chunksize=1, index_col=0)
+DATA = pd.read_csv("data/2014JAN.csv", header=[0,1], chunksize=1, index_col=0)
 SLEEP = 30 #seconds
 
 scale = lambda x: int(x*10**3)
